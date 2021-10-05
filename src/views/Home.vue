@@ -201,7 +201,7 @@ export default {
            async fetchOwnedToast(){
 
             let apiURI = 'https://api.starflask.com/api/v1/testapikey'
-            let inputData = {requestType: 'ERC721_balance_by_token', input: { token:'0x9b2214d749f736873b2232a54889342610878651' } } 
+            let inputData = {requestType: 'ERC721_balance_by_contract', input: { contractAddress:'0x9b2214d749f736873b2232a54889342610878651' } } 
             let results = await StarflaskAPIHelper.resolveStarflaskQuery(apiURI ,  inputData  )
             
 
